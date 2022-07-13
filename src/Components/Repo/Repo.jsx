@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react'
 import moment from 'moment'
 import './Repo.scss'
+import { formatNumber } from '../../utils'
 
 const Repo = ( {repo}, ref ) => {
 
@@ -16,8 +17,8 @@ const Repo = ( {repo}, ref ) => {
         <p className="description">{repo?.description ?? ''}</p>
 
         <div className="info">
-          <span className="star box">stars: {repo?.stargazers_count ?? ''}</span>
-          <span className="issue box">issues: {repo?.open_issues_count ?? ''}</span>
+          <span className="star box">stars: {formatNumber(repo?.stargazers_count) ?? ''}</span>
+          <span className="issue box">issues: {formatNumber(repo?.open_issues_count) ?? ''}</span>
           <span className="extra">submitted {moment(`${repo?.created_at}`).fromNow()} by {repo?.owner?.login}</span>
         </div>
       </div>

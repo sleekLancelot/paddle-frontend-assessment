@@ -7,6 +7,12 @@
         margin-bottom: 50px;   
     }
 
+    &:last-of-type{
+        @include mq(tablet, min) {
+            margin-bottom: 20px;   
+        }
+    }
+
     .avatar{
         flex-basis: 30%;
         img {
