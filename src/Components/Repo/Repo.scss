@@ -1,5 +1,66 @@
 @import '../../Assets/scss/index.scss';
 
 .repo {
-    
+    display: flex;
+    margin: 15px 10px 40px;
+    @include mq(tablet, min) {
+        margin-bottom: 50px;   
+    }
+
+    .avatar{
+        flex-basis: 30%;
+        img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            @include mq(tablet, min) {
+                width: 150px;
+                height: 150px;
+                border-radius: 10px;   
+            }
+        }
+    }
+
+    .content {
+        flex-basis: 70%;
+        // display: flex;
+        // flex-direction: column;
+        @include flex-btw(column);
+        // justify-content: flex-start;
+        align-items: flex-start;
+
+        .repoName {
+            text-align: left;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        .description {
+            @include mq(tablet) {
+                font-size: 16px;
+                padding-top: 5px;
+            }
+        }
+
+        .info {
+            @include mq(tablet,max) {
+                font-size: 16px;
+                margin-top: 20px;
+                @include flex-btw(_, wrap)
+            }
+            align-self: flex-start;
+            span {
+                margin-right: 10px;
+            }
+            .box {
+                border: 2px solid $border-color;
+                padding: 5px;
+            }
+            .extra {
+                @include mq(tablet,max) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
 }

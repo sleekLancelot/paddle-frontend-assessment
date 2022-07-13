@@ -15,10 +15,13 @@ export const getRepos = async (params) => {
 
     try {
         const res = await axios.get(`https://api.github.com/search/repositories?${queryString || ''}`)
-        console.log(res)
+
         if (res.status >= 200) return res.data
     } catch (err) {
-        console.log(err)
+
+        return {
+            err: err?.message,
+        }
     }
 
 }
