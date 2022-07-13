@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react'
 import moment from 'moment'
 import './Repo.scss'
-import { formatNumber } from '../../utils'
+import { formatNumber } from '../../../utils'
 
 const Repo = ( {repo}, ref ) => {
 

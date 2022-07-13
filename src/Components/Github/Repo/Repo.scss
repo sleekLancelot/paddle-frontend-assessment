@@ -1,8 +1,16 @@
-@import '../../Assets/scss/index.scss';
+@import '../../../Assets/scss/index.scss';
 
 .repo {
     display: flex;
-    margin: 15px 10px 40px;
+    margin: 15px auto 40px;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    padding: 25px;
+    &:hover {
+        box-shadow: none;
+        cursor: pointer;
+    }
     @include mq(tablet, min) {
         margin-bottom: 50px;   
     }

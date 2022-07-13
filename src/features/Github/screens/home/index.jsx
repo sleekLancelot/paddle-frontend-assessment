@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import { getRepos } from '../../actions'
-import { Repo, Spinner } from '../../Components'
+import { Repo, Spinner } from '../../../../Components'
 import { useInfiniteScroll } from '../../hooks'
 import './Home.scss'
 
@@ -85,4 +85,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export { Home }

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { buildQueryString, monthAgo } from '../utils';
+import { buildQueryString, monthAgo } from '../../../utils';
 
 export const getRepos = async (params) => {
     const date = monthAgo().toLocaleDateString('en-CA')
