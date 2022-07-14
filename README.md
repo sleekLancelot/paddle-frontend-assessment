@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+#Overview
+## Task one (Metric)
+
+- Design Proficiency
+- Implementation of this adobe prototype design. https://xd.adobe.com/view/b9ed8245-2809-4b31-a3c4-5c2e76ddb7e8-ecbe/?fullscreen
+
+## Task two (Github)
+
+- Logic Skill
+- Here the paginated github rest api is queried for data and displayed using an infinite scroll format until there is no more data to be displayed.
+
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -11,8 +22,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+the index route is the github route,
+to see the pages from task 1 (design proficiency) navigate to the respective routes like /comingsoon navigate 
 
 ## Libraries/Modules being used.
 
