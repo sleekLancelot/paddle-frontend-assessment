@@ -40,7 +40,7 @@ const NavBar = ({ transBG = true }) => {
                 ))
             }
             <NavLink 
-                to={`/contact`}
+                to={`#`}
                 className={`link button`}>
                 Contact Us
             </NavLink>

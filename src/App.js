@@ -33,11 +33,11 @@ function App() {
             element={<About />}
           />
 
-          {/* <Route 
+          <Route 
             exact
             path='/'
             element={<Navigate to='/github' replace />}
-          /> */}
+          />
         </Routes>
       </BrowserRouter>
     </div>
