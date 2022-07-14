@@ -16,7 +16,7 @@ body {
     "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
-a {
+a:not(.logoLink) {
   text-decoration: none;
   display: inline-block;
   transform: scale(1);

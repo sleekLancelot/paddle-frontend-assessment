@@ -1,0 +1,36 @@
+@import '../../../../Assets/scss/index';
+
+.nav {
+    width: 100%;
+    @include flex-btw;
+    @include mq(tablet, min) {
+        height: 130px;
+    }
+    @include mq(tablet) {
+        padding-top: 20px;
+    }
+
+    .links {
+        flex-basis: 80%;
+        @include mq(tablet, min) {
+            flex-basis: 40%;            
+        }
+        @include flex-around;
+
+        &.PlainBG {
+            background-color: $white-bg-banner;
+            .link {
+                color: $black;
+            }
+        }
+
+        .link {
+            color: $purewhite;
+            text-transform: capitalize;
+
+            &.button {
+                @include Buttons($blue, $purewhite)
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../../../Assets/scss/index';
+
+.logo {
+    width: 80px;
+
+    @include mq(tablet, min) {
+        // flex-basis: 20%;
+        width: 100px;
+        height: 80px;
+    }
+
+    a {
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

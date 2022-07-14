@@ -1,0 +1,8 @@
+@import '../../../../Assets/scss/index';
+
+.comingSoon {
+    min-width: 100vw;
+    min-height: 170vh;
+    background: center / cover no-repeat url("../../../../Assets/img/background_img.svg");
+    overflow-x: hidden;
+}

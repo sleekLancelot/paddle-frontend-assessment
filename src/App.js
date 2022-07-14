@@ -5,6 +5,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import { Home } from "./features/Github/screens";
+import { About, ComingSoon } from "./features/Metric/screens";
 
 function App() {
   return (
@@ -18,11 +19,25 @@ function App() {
             element={<Home />}
           />
 
-          <Route 
+          <Route
+            index
             exact
-            path='*'
-            element={<Navigate to='/github' replace />}
+            path='/comingsoon'
+            element={<ComingSoon />}
           />
+
+          <Route
+            index
+            exact
+            path='/about'
+            element={<About />}
+          />
+
+          {/* <Route 
+            exact
+            path='/'
+            element={<Navigate to='/github' replace />}
+          /> */}
         </Routes>
       </BrowserRouter>
     </div>

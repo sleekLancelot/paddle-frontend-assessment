@@ -33,12 +33,14 @@
   }
 }
 
-@mixin Buttons($bgColor, $color , $width:200px) {
+@mixin Buttons($bgColor, $color , $width:120px) {
     width: $width;
     background-color: $bgColor;
     height: 54px;
-    border: 1px solid $border-color;
-    border-radius: 8px;
+    background: $bgColor 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #09090991;
+    border-radius: 51px;
+    opacity: 1;
     color: $color;
     font-weight: 700;
     text-transform: capitalize;

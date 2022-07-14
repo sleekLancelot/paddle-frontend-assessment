@@ -1,0 +1,41 @@
+@import '../../../Assets/scss/index';
+
+.main {
+    margin: 20px auto;
+    color: $purewhite;
+    font-family: poppins;
+    h3{
+        font-family: poppins;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    p{
+        text-align: center;
+        font-family: poppins;
+        padding: 5px;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 10px;
+
+        .bold{
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+
+    .countDownCards{
+        width: 70%;
+        margin: 30px auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 140px);
+        grid-template-rows: repeat(2, 140px);
+        @include mq(tablet, min) {
+            @include flex-btw;
+        }
+    }
+}

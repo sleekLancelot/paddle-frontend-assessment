@@ -1,2 +1,2 @@
 export * from './Github'
-// export * from './Metric'
+export * from './Metric'
