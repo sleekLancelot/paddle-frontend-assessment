@@ -32,7 +32,7 @@ const InputWithButton = ({
             _active={{
                 bgColor: '#271AC1',
             }}
-            width={{ base: '270px', md: 'auto' }}
+            width={'270px'}
             textTransform={'uppercase'}
             fontSize={{ base: 'xs', md: 'sm' }}
             fontFamily={'mono'}

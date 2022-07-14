@@ -1,19 +1,21 @@
 import React from 'react'
-import { Box, Center, Container, Flex, Spacer, Heading, Text, Divider, chakra } from '@chakra-ui/react'
+import { Box, Center, Container, Flex, Spacer, Heading, Text, Divider, chakra, Image,SimpleGrid } from '@chakra-ui/react'
 
 import bgImage from '../../../../Assets/img/background_img.svg'
+import dot from '../../../../Assets/img/dots.png'
 import { BlurBox, Footer, NavBar } from '../../../../Components'
 
 const About = () => {
   return (
     <Box
-      minHeight='250vh'
-      height={{ base: '310vh', md:'300vh'}}
+      minHeight='300vh'
+      height={{ base: '350vh', md:'320vh'}}
       p={3}
       bgImage={`url(${bgImage})`}
       bgPosition={'center'}
       bgSize='cover'
       fontFamily={'mono'}
+      overflowX='hidden'
     >
       <NavBar />
       <Container maxWidth={'container.lg'} position='relative'>
@@ -67,11 +69,18 @@ const About = () => {
         fontSize={'16px'}
       >
         <Box w={{ base: '100%', md: '40%' }} alignSelf='flex-start' mb={'20px'} lineHeight='30px'>
+        <SimpleGrid spacing={30} row={2}>
           <chakra.p display={'flex'} alignItems='center' my='20px'>
             <Text alignSelf={'flex-start'}> 01 <Divider width={'40px'} /></Text>
             <Text>Whats Up?</Text>
           </chakra.p>
           We pride ourselves in our ability to innovate and create world-class tools that provide reliable and efficient touchpoints between advertisers and affiliates.
+
+          <Box>
+            <Image src={dot} boxSize='100px'
+            objectFit='cover' />
+          </Box>
+        </SimpleGrid>
         </Box>
 
         <Box w={{ base: '100%', md: '40%' }} backdropBlur='18px' position={'relative'} mb={'20px'} lineHeight='30px'>
