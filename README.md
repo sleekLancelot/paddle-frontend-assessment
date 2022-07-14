@@ -24,14 +24,13 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 the index route is the github route,
-to see the pages from task 1 (design proficiency) navigate to the respective routes like /comingsoon navigate 
+to see the pages from task 1 (design proficiency) navigate to the respective routes like /comingsoon, /about e.t.c. 
 
 ## Libraries/Modules being used.
 
 - react
+- react-router-dom
 - sass
 - chakra-ui/react
-  - framer-motion
-  - @emotion/react | emotion/styled
 - moment
 - axios
