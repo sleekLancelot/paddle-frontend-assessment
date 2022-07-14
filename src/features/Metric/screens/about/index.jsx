@@ -2,12 +2,13 @@ import React from 'react'
 import { Box, Center, Container, Flex, Spacer, Heading, Text, Divider, chakra } from '@chakra-ui/react'
 
 import bgImage from '../../../../Assets/img/background_img.svg'
-import { Footer, NavBar } from '../../../../Components'
+import { BlurBox, Footer, NavBar } from '../../../../Components'
 
 const About = () => {
   return (
     <Box
-      minHeight='170vh'
+      minHeight='250vh'
+      height={{ base: '310vh', md:'300vh'}}
       p={3}
       bgImage={`url(${bgImage})`}
       bgPosition={'center'}
@@ -16,12 +17,17 @@ const About = () => {
     >
       <NavBar />
       <Container maxWidth={'container.lg'} position='relative'>
-        {/* <Box 
-          position='absolute'
-          bg='rgba(128, 128, 128,0.5)'
-          filter='blur(16px)'
-          height='40%'
-        /> */}
+        
+        <BlurBox
+          filter={'blur(8px)'}
+          opacity='0.1'
+          // bg='transparent linear-gradient(180deg, #eee 0%, #fff 100%) 0% 0% no-repeat padding-box'
+          bg='rgba(255, 255, 255, .8)'
+          offsetLeft='-20px'
+          width={'60%'}
+          height='100%'
+        />
+
         <Flex direction={'column'} marginTop='35px'>
           <Heading color={'#fff'} fontSize={'18px'} alignSelf='center' w={{ base: '100%', md: '60%' }} marginY={'10px'} display='flex'
           alignItems='center'>
@@ -29,7 +35,7 @@ const About = () => {
           </Heading>
 
           <Center marginY={'15px'}>
-            <Text fontSize={{ base: '25px', md: '40px' }} fontWeight={'bold'} color={'#fff'}>
+            <Text fontSize={{ base: '25px', md: '50px' }} fontWeight={'bold'} color={'#fff'}>
               Built for Saas <br /> and E-commerce
             </Text>
           </Center>
@@ -45,7 +51,8 @@ const About = () => {
         </Flex>
       </Container>
 
-      <Heading my='50px' mx={'auto'} size='md' color='#fff' w={{ base: '100%', md: '60%' }} textAlign='center'>
+      <Heading my='50px' mx={'auto'} size='lg'
+      fontSize={'30px'} color='#fff' w={{ base: '100%', md: '60%' }} textAlign='center'>
         Metricks was developed because just like you, we needed a product that could give us <chakra.strong>good value</chakra.strong>.
       </Heading>
 
@@ -59,7 +66,7 @@ const About = () => {
         fontWeight={300}
         fontSize={'16px'}
       >
-        <Box w={{ base: '100%', md: '40%' }} alignSelf='flex-start'>
+        <Box w={{ base: '100%', md: '40%' }} alignSelf='flex-start' mb={'20px'} lineHeight='30px'>
           <chakra.p display={'flex'} alignItems='center' my='20px'>
             <Text alignSelf={'flex-start'}> 01 <Divider width={'40px'} /></Text>
             <Text>Whats Up?</Text>
@@ -67,11 +74,22 @@ const About = () => {
           We pride ourselves in our ability to innovate and create world-class tools that provide reliable and efficient touchpoints between advertisers and affiliates.
         </Box>
 
-        <Box w={{ base: '100%', md: '40%' }} backdropBlur='18px'>
+        <Box w={{ base: '100%', md: '40%' }} backdropBlur='18px' position={'relative'} mb={'20px'} lineHeight='30px'>
+
+          <BlurBox
+            filter={'blur(4px)'}
+            opacity='0.1'
+            bg='transparent linear-gradient(180deg, #eee 0%, #ddd 100%) 0% 0% no-repeat padding-box'
+            offsetRight='-20px'
+            width={'120%'}
+            height='100%'
+          />
+
           <chakra.p display={'flex'} alignItems='center' my='20px'>
             <Text alignSelf={'flex-start'}> 02 <Divider width={'40px'} /></Text>
             <Text>Growing With You</Text>
           </chakra.p>
+
           <Text my='20px'>
             Leveraging the best technology, we have developed an all-in-one affiliate marketing tracking software, a genius tool to help you track, automate and optimize your influencer campaigns, all from one dashboard.
           </Text>
@@ -80,6 +98,33 @@ const About = () => {
           </Text>
         </Box>
       </Flex>
+
+      <Box 
+        width={'100%'}
+        height='200px'
+        my={'30px'} 
+        color='#fff' 
+        px='15px'
+        pt='35px'
+        position={'relative'}
+        textAlign={{ base: 'center', md: 'left'}}
+      >
+       <BlurBox
+          filter={'blur(4px)'}
+          opacity='0.1'
+          offsetLeft={'-20px'}
+          bg='transparent linear-gradient(180deg, #eee 0%, #ddd 100%) 0% 0% no-repeat padding-box'
+          width={'120%'}
+          height='100%'
+        /> 
+        <Heading fontSize={'40px'} mt='20px'>
+          Got a Question?
+        </Heading>
+        <Text my='20px'>
+          See how Metricks can help your business grow with best Affiliate Marketing Tracking <br /> Software.
+        </Text>
+        <chakra.p color='#FF00F7'>Contact Us <i class="fa-solid fa-arrow-right"></i> </chakra.p>
+      </Box>
       
       <Footer />
     </Box>
